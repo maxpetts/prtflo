@@ -14,3 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
+
+nav {
+  float: right;
+  margin: 0 1rem;
+  position: fixed;
+}
+
+ul:first-of-type {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+ul:first-of-type > li {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+}
