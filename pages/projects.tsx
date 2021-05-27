@@ -30,7 +30,7 @@ export default function Projects() {
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>Welcome to M Pizzles ting</h1>
+                <h1 className={styles.title}>Projects</h1>
             </main>
         </div>
     );
