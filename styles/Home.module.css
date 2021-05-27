@@ -52,6 +52,10 @@
   font-size: 4rem;
 }
 
+.err404 {
+  margin-bottom: 1.5rem;
+}
+
 .title,
 .description {
   text-align: center;
