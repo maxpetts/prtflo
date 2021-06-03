@@ -1,6 +1,7 @@
 import "../styles/globals.css";
+import "../styles/style.css";
 import type { AppProps } from 'next/app';
-import Link from "next/link";
+import Nav from "../components/Nav"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -9,35 +10,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
     </div>
   );
-}
-
-function Nav() {
-  return (
-    <nav>
-      <ul>
-        <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/projects">
-            <a>Projects</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/cv">
-            <a>CV</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/contact">
-            <a>Contact</a>
-          </Link>
-        </li >
-      </ul >
-    </nav>
-  )
 }
 
 export default MyApp;

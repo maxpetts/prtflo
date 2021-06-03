@@ -33,4 +33,6 @@ Created using [Next.js](https://nextjs.org/).
 - [ ] Dark mode
 - [ ] Contact form
 - [ ] Embed pdf of CV
+- [ ] [Lottie](https://airbnb.io/lottie/#/web) animations
+- [ ] Page animations using [motion](https://www.framer.com/api/motion/)
 - [ ] Fancy wow feature (3d n that)
