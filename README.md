@@ -1,7 +1,7 @@
 ## My Portfolio
 
 The repo for my personal and work portfolio.
-Hosted using GitHub pages at [URL]().
+Hosted using Vercel pages at [maxpetts.me](https://maxpetts.me).
 Created using [Next.js](https://nextjs.org/).
 
 ### Pages
