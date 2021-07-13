@@ -27,13 +27,16 @@ import animation_contact from "../public/icons/contact.json";
  * @param animationPath The path to the Lottie JSON animation.
  */
 class LottieButton extends React.Component<{ link: string, name: string, animationPath: any }> {
-    private container: React.RefObject<HTMLLIElement>;
+    private container: React.RefObject<HTMLAnchorElement>;
     private animation: AnimationItem;
+    private isMobile: boolean;
+    public state = { isAnimationPlaying: false };
 
     constructor(props) {
         super(props);
+        this.state = { isAnimationPlaying: false }
         // Create reference to container so we can pass it to lotties loadAnimation function
-        this.container = React.createRef<HTMLLIElement>();
+        this.container = React.createRef<HTMLAnchorElement>();
         // Ensure event callback function is bound to this class instance because React..
         this.play_animation = this.play_animation.bind(this);
     }
@@ -43,22 +46,33 @@ class LottieButton extends React.Component<{ link: string, name: string, animati
             container: this.container.current,
             loop: false,
             autoplay: false,
-            animationData: this.props.animationPath
-        })
+            animationData: this.props.animationPath,
+            name: this.props.name
+        });
+
+        // Must set isMobile after component mount as navigator isn't created because SSR
+        this.isMobile = navigator.userAgent.includes("Mobile");
+
+        // Event listener added to avoid strange hover upon quick hover successions.
+        this.animation.addEventListener('complete', () => this.setState({ isAnimationPlaying: false }));
+    }
+
+    componentWillUnmount() {
+        lottie.destroy(this.props.name);
     }
 
     play_animation() {
-        if (this.animation !== null) {
-            this.animation.goToAndPlay(0, true);
+        if (this.animation !== null && this.state.isAnimationPlaying == false) {
+            this.setState({ isAnimationPlaying: true });
+            this.animation.goToAndPlay(this.animation.firstFrame, true);
         }
     }
 
     render() {
         return (
-            // Place lottie onto LI element to avoid glitch when hovering.
-            <li ref={this.container}>
+            <li>
                 <Link href={this.props.link}>
-                    <a onMouseOver={this.play_animation} >
+                    <a ref={this.container} onMouseOver={this.isMobile ? null : this.play_animation} onClick={this.isMobile ? this.play_animation : null}>
                         {this.props.name}
                     </a>
                 </Link>
@@ -68,7 +82,7 @@ class LottieButton extends React.Component<{ link: string, name: string, animati
 }
 
 /**
- * Easy to add nav bar pages
+ * Easy to add nav bar items using a json object
  * link: The url to redirect to
  * name: The name to be displayed on the button
  * animationPath: The path or JSON object to the animation
