@@ -67,14 +67,26 @@ class LottieButton extends React.Component<{ link: string, name: string, animati
     }
 }
 
+/**
+ * Easy to add nav bar pages
+ * link: The url to redirect to
+ * name: The name to be displayed on the button
+ * animationPath: The path or JSON object to the animation
+ */
+const pages = [
+    { link: "/", name: "Home", animationPath: animation_home },
+    { link: "/projects", name: "Projects", animationPath: animation_projects },
+    { link: "/cv", name: "CV", animationPath: animation_cv },
+    { link: "/contact", name: "Contact", animationPath: animation_contact }
+];
+
 function Nav() {
     return (
         <nav>
             <ul>
-                <LottieButton link="/" name="Home" animationPath={animation_home}></LottieButton>
-                <LottieButton link="/projects" name="Projects" animationPath={animation_projects}></LottieButton>
-                <LottieButton link="/cv" name="CV" animationPath={animation_cv}></LottieButton>
-                <LottieButton link="/contact" name="Contact" animationPath={animation_contact}></LottieButton>
+                {pages.map(({ link, name, animationPath }) => (
+                    <LottieButton key={name} link={link} name={name} animationPath={animationPath}></LottieButton>
+                ))}
             </ul >
         </nav >
     );
