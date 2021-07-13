@@ -1,69 +1,87 @@
-.err404 {
-  margin-bottom: 1.5rem !important;
-}
-
-nav {
-  margin: 1rem 0;
-  overflow: hidden;
-}
-
 nav > ul {
   display: flex;
-  float: right;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 nav > ul > li {
   text-align: center;
-  margin: 0.75rem 2vw;
-  padding: 0.25rem 1vw;
-  display: flex;
-  flex-direction: row-reverse;
-  overflow: visible;
-}
-
-nav > ul > li:last-of-type {
-  margin-right: 4vw;
 }
 
 nav > ul > li > a {
-  margin: auto;
-  margin-left: 0.3rem;
+display: flex;
 }
 
-nav > ul > li > svg {
-  height: 2.3rem !important;
-}
-
-@media (max-width: 768px) {
+/* Desktop. Not ultrawides */
+@media (min-width: 800px) and (max-width: 2160px) {
   nav {
-    width: 100%;
-    margin: 0;
-    position: absolute;
-    bottom: 0px;
+    margin: 1rem 0;
+    overflow: hidden;
   }
 
   nav > ul {
-    float: none;
-    margin: 0 0.5rem;
+    float: right;
+    margin: 0;
   }
 
   nav > ul > li {
-    text-align: center !important;
-    flex: 1 0 auto;
-    margin: 1rem 1rem;
+    margin: 0 2vw;
+  }
+
+  nav > ul > li:last-of-type {
+    margin-right: 4vw;
   }
 
   nav > ul > li > a {
-    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0.25rem 1vw;
+    line-height: 2.3rem;
+    border-radius: 3rem;
   }
 
-  nav > ul > li > a div {
-    height: 50px;
-    width: 50px;
-    margin: auto !important;
-    display: block !important;
+  nav > ul > li > a > svg {
+    height: 2.3rem !important;
+    margin-right: 0.3rem;
+    z-index: -1;
   }
+
+  .err404 {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+/* Handheld. Handles both portrait and landscape. */
+@media (min-width: 320px) and (max-width: 568px) {
+  nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 0;
+    background-color: rgba(201, 201, 201, 0.4);
+    box-shadow: 1px 2px 15px 16px rgba(201, 201, 201, 0.4);
+    -webkit-box-shadow: 1px 2px 15px 16px rgba(201, 201, 201, 0.4);
+    -moz-box-shadow: 1px 2px 15px 16px rgba(201, 201, 201, 0.4);
+  }
+
+  nav > ul {
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+
+  nav > ul > li > a {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 0.8rem;
+  }
+
+  nav > ul > li > a > svg {
+    height: 3rem !important;
+  }
+}
+
+/* Tablet. Handles both portrait and landscape. */
+@media (min-width: 600px) and (max-width: 800px) {
+
 }
