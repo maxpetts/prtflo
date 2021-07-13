@@ -1,12 +1,12 @@
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 
-export default function Error() {
+function NotFound() {
     return (
         <div className={styles.container}>
             <main className={styles.main}>
                 <div className={styles.card}>
-                    <h1 className={`${styles["title"]} ${styles["err404"]}`}>404</h1>
+                    <h1 className={`${styles["title"]} err404`}>404</h1>
                     <Image
                         src={"/404/404-" + Math.floor(Math.random() * 7) + ".gif"}
                         alt="There should be a picture here lol"
@@ -18,3 +18,5 @@ export default function Error() {
         </div>
     );
 }
+
+export default NotFound;
