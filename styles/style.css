@@ -1,5 +1,9 @@
+.err404 {
+  margin-bottom: 1.5rem !important;
+}
+
 nav {
-  margin: 1rem;
+  margin: 1rem 0;
   overflow: hidden;
 }
 
@@ -13,17 +17,24 @@ nav > ul {
 
 nav > ul > li {
   text-align: center;
-  margin: 1rem 5vw;
+  margin: 0.75rem 2vw;
+  padding: 0.25rem 1vw;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: visible;
+}
+
+nav > ul > li:last-of-type {
+  margin-right: 4vw;
 }
 
 nav > ul > li > a {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  margin: auto;
+  margin-left: 0.3rem;
 }
 
-nav > ul > li > a div {
-  display: none;
+nav > ul > li > svg {
+  height: 2.3rem !important;
 }
 
 @media (max-width: 768px) {
@@ -32,10 +43,6 @@ nav > ul > li > a div {
     margin: 0;
     position: absolute;
     bottom: 0px;
-  }
-
-  nav + div.Home_container__1EcsU {
-    position: relative;
   }
 
   nav > ul {
