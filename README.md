@@ -31,6 +31,7 @@ Created using [Next.js](https://nextjs.org/).
 
 - [ ] Navbar
 - [ ] Dark mode
+- [ ] First visit welcome message
 - [ ] Contact form
 - [ ] Embed pdf of CV
 - [ ] [Lottie](https://airbnb.io/lottie/#/web) animations
