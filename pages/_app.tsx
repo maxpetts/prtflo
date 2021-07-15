@@ -6,7 +6,7 @@ import Nav from "../components/Nav"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div>
+    <div className={"mainContainer"}>
       <Head>
         <title> Max Petts </title>
         <link
