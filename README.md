@@ -29,7 +29,7 @@ Created using [Next.js](https://nextjs.org/).
 
 #### Misc
 
-- [ ] Navbar
+- [x] Navbar (Mobile & Desktop)
 - [ ] Dark mode
 - [ ] First visit welcome message
 - [ ] Contact form
