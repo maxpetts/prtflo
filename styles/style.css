@@ -62,15 +62,26 @@ display: flex;
   }
 
   body {
-    
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;   
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: black;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); 
   }
 
   body::before {
     content: "why is ur screen so small!?";
-    font-size: 6vw;
-    text-align: center;
-    margin: auto;
-    position: relative;
+    font-size: 20vw;
+    color: white;
+    font-weight: bolder;
   }
 }
 
