@@ -30,9 +30,11 @@ Created using [Next.js](https://nextjs.org/).
 #### Misc
 
 - [x] Navbar (Mobile & Desktop)
-- [ ] Dark mode
 - [ ] First visit welcome message
 - [ ] Contact form
+- [ ] Fuzzy(?) search of projects 
+- [ ] Project filtering by language, date, complexity etc
+- [ ] Dark mode
 - [ ] Embed pdf of CV
 - [ ] [Lottie](https://airbnb.io/lottie/#/web) animations
 - [ ] Page animations using [motion](https://www.framer.com/api/motion/)
