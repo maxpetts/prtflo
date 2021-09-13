@@ -15,6 +15,7 @@ Created using [Next.js](https://nextjs.org/).
 
 #### Projects
 
+- [ ] 1025; Text based adventure game (python)
 - [ ] 2027; Checkout runnables (JAVA)
 - [ ] 2150; Clock (JAVA)
 - [ ] 2150; Dice/HiLow game (JAVA)
