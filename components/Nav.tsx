@@ -1,12 +1,9 @@
 /**
  * Returns the basic HTML for the navigation bar.
- * Includes lottie animations for when nav buttons interacted with.
+ * Includes lottie animations for when nav buttons are interacted with.
  * 
  * @author Max Petts
  * @link https://github.com/maxpxtts/prtflo
- * 
- *  @todo
- *  - Handle mobile: must animate on click rather than hover.
  */
 
 import Link from "next/link";
@@ -55,6 +52,7 @@ class LottieButton extends React.Component<{ link: string, name: string, animati
 
         // Event listener added to avoid strange hover upon quick hover successions.
         this.animation.addEventListener('complete', () => this.setState({ isAnimationPlaying: false }));
+
     }
 
     componentWillUnmount() {
