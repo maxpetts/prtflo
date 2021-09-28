@@ -36,6 +36,6 @@ Created using [Next.js](https://nextjs.org/).
 - [ ] Project filtering by language, date, complexity etc
 - [ ] Dark mode
 - [ ] Embed pdf of CV
-- [ ] [Lottie](https://airbnb.io/lottie/#/web) animations
+- [x] [Lottie](https://airbnb.io/lottie/#/web) animations
 - [ ] Page animations using [motion](https://www.framer.com/api/motion/)
 - [ ] Fancy wow feature (3d n that)
