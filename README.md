@@ -15,8 +15,9 @@ Created using [Next.js](https://nextjs.org/).
 
 #### Projects
 
-- [ ] 2027; Checkout runnables (JAVA)
-- [ ] 2150; Clock (JAVA)
+- [ ] 1025; Text based adventure game (python)
+- [x] 2027; Checkout runnables (JAVA)
+- [x] 2150; Clock (JAVA)
 - [ ] 2150; Dice/HiLow game (JAVA)
 - [ ] 2150; Calculator (JAVA)
 - [ ] 2150; Threaded bouncing balls (JAVA)
@@ -32,7 +33,7 @@ Created using [Next.js](https://nextjs.org/).
 - [x] Navbar (Mobile & Desktop)
 - [ ] First visit welcome message
 - [ ] Contact form
-- [ ] Fuzzy(?) search of projects 
+- [ ] Fuzzy(?) search of projects
 - [ ] Project filtering by language, date, complexity etc
 - [ ] Dark mode
 - [ ] Embed pdf of CV
