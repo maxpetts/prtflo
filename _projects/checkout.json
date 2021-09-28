@@ -1,0 +1,8 @@
+{
+    "title": "Checkout Simulation",
+    "desc": "A Java program to emulate and then visualise the internal workings of a supermarket",
+    "image": "/../public/favicon/android-chrome-512x512.png",
+    "git": "https://github.com/maxpxtts/Checkout",
+    "complexity": 2,
+    "lang": "Java"
+}
