@@ -3,6 +3,12 @@
   --main-bg-colour: rgb(235, 235, 245);
 }
 
+nav {
+  z-index: 100;
+  background-color: #f3f3f3;
+  position: sticky;
+}
+
 nav > ul {
   display: flex;
   list-style-type: none;
@@ -13,13 +19,51 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-display: flex;
+  display: flex;
+  z-index: 101;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.main {
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.project {
+  margin: 0.5em;
+  padding: 0.5em 2.5em;
+  width: 25em;
+  height: 30vh;
+  border: 0.2em solid rgba(133, 129, 200, 0.4);
+  border-radius: 2rem;
+  background-color: rgba(133, 129, 200, 0.15);
+  box-shadow: 0 0 1em 0.25em #f3f3f3;
+}
+
+.project :not(h2) {
+  display: flex;
+}
+
+.project h2 {
+  width: 100%;
 }
 
 /* Desktop. Not ultrawides */
 @media (min-width: 800px) and (max-width: 2160px) {
   nav {
-    margin: 1rem 0;
     overflow: hidden;
   }
 
@@ -30,6 +74,7 @@ display: flex;
 
   nav > ul > li {
     margin: 0 2vw;
+    padding: 1rem 0;
   }
 
   nav > ul > li:last-of-type {
@@ -39,7 +84,7 @@ display: flex;
   nav > ul > li > a {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0.25rem 1vw;
+    padding: 0.25rem 1em;
     line-height: 2.3rem;
     border-radius: 3rem;
   }
@@ -47,7 +92,6 @@ display: flex;
   nav > ul > li > a > svg {
     height: 2.3rem !important;
     margin-right: 0.3rem;
-    z-index: -1;
   }
 
   .err404 {
@@ -65,16 +109,16 @@ display: flex;
     position: absolute;
     margin: auto;
     left: 0;
-    right: 0;   
+    right: 0;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background-color: black;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
   }
 
   body::before {
@@ -87,18 +131,18 @@ display: flex;
 
 /* Handheld. Handles both portrait and landscape. */
 @media (min-width: 320px) and (max-width: 568px) {
-
   .mainContainer {
     background-color: var(--main-bg-colour);
   }
 
   nav {
-    position: fixed;
     bottom: 0;
+    position: fixed;
     width: 100%;
     text-align: center;
     padding: 0.5rem 0 1rem 0;
     background-color: var(--second-bg-colour);
+    margin-top: 15px;
     box-shadow: 1px 0 15px 16px var(--second-bg-colour);
     -webkit-box-shadow: 1px 0 15px 16px var(--second-bg-colour);
     -moz-box-shadow: 1px 0 15px 16px var(--second-bg-colour);
@@ -122,9 +166,9 @@ display: flex;
 }
 
 /* Tablet. Handles both portrait and landscape. */
-@media (min-width: 568px) and (max-width: 800px) {
+@media (min-width: 568px) and (max-width: 928px) {
   .mainContainer {
-    background-color: var(--main-bg-colour);
+    background-color: green;
   }
 
   nav {
@@ -145,13 +189,13 @@ display: flex;
     justify-content: space-evenly;
   }
 
-nav > ul > li > a {
-  display: flex;
-  flex-direction: column-reverse;
-  font-size: 2.5vh;
-}
+  nav > ul > li > a {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 2.5vh;
+  }
 
-nav > ul > li > a > svg {
-  height: 10vh !important;
-}
+  nav > ul > li > a > svg {
+    height: 10vh !important;
+  }
 }
