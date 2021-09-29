@@ -33,10 +33,12 @@ Created using [Next.js](https://nextjs.org/).
 - [x] Navbar (Mobile & Desktop)
 - [ ] First visit welcome message
 - [ ] Contact form
+- [ ] Embed pdf of CV
+- [ ] Project langs with fancy icons
 - [ ] Fuzzy(?) search of projects
 - [ ] Project filtering by language, date, complexity etc
 - [ ] Dark mode
-- [ ] Embed pdf of CV
 - [x] [Lottie](https://airbnb.io/lottie/#/web) animations
 - [ ] Page animations using [motion](https://www.framer.com/api/motion/)
 - [ ] Fancy wow feature (3d n that)
+- [ ] 404 click to refresh image
