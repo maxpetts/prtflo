@@ -9,7 +9,7 @@ function ProjectItem({ slug, title, desc, image, git, complexity, lang }) {
             <div className="project">
                 <h2>{title}</h2>
                 <div>
-                    <Image src={image} alt={"a relevant project image"} height={300} width={300} />
+                    <Image src={image} alt={"an image relating to " + title} height={300} width={300} />
                     <span>{desc}</span>
                 </div>
             </div>
