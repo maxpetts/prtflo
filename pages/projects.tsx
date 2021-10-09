@@ -5,7 +5,7 @@ import { getProjects } from "../lib/projectLoader";
 
 function ProjectItem({ slug, title, desc, image, git, complexity, lang }) {
     return (
-        <Link href={slug}>
+        <Link href={git}>
             <div className="project">
                 <h2>{title}</h2>
                 <div>
