@@ -28,7 +28,7 @@ nav > ul > li > a {
   line-height: 1.15;
   font-size: 4rem;
   text-align: center;
-  margin: 0.5em 0;
+  padding: 0.5em 0;
 }
 
 .main {
@@ -51,14 +51,41 @@ nav > ul > li > a {
   border-radius: 2rem;
   background-color: rgba(133, 129, 200, 0.15);
   box-shadow: 0 0 1em 0.25em #f3f3f3;
+  display: grid;
+  grid-template-rows: 3.5em auto;
 }
 
-.project :not(h2) {
-  display: flex;
+.project > h2 {
 }
 
-.project h2 {
+.project-desc {
+  height: 100%;
   width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: flex-start;
+  justify-items: center;
+  align-items: center;
+}
+
+.project-desc > div {
+  display: inline-flex !important;
+  position: relative !important;
+  height: inherit;
+  width: inherit;
+}
+
+.project-desc img {
+  /* Due to NextJS image optimization must use min-height/width for all image sizing*/
+  min-width: calc(100% - 1em) !important;
+  min-height: calc(100% - 1em) !important;
+  left: 0 !important;
+  top: 0 !important;
+  margin-left: 0!important;
+}
+
+.project-desc > span {
 }
 
 /* Desktop. Not ultrawides */
@@ -74,7 +101,7 @@ nav > ul > li > a {
 
   nav > ul > li {
     margin: 0 2vw;
-    padding: 1rem 0;
+    padding: 1em 0;
   }
 
   nav > ul > li:last-of-type {
@@ -84,14 +111,16 @@ nav > ul > li > a {
   nav > ul > li > a {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0.25rem 1em;
-    line-height: 2.3rem;
-    border-radius: 3rem;
+    padding: 0.25em 1em;
+    line-height: 2.3em;
+    border-radius: 3em;
+    margin:0;
   }
 
   nav > ul > li > a > svg {
-    height: 2.3rem !important;
-    margin-right: 0.3rem;
+    height: 2.3em !important;
+    width: 2.3em !important;
+    margin-right: 0.3em;
   }
 
   .err404 {
@@ -139,10 +168,8 @@ nav > ul > li > a {
     bottom: 0;
     position: fixed;
     width: 100%;
-    text-align: center;
     padding: 0.5rem 0 1rem 0;
     background-color: var(--second-bg-colour);
-    margin-top: 15px;
     box-shadow: 1px 0 15px 16px var(--second-bg-colour);
     -webkit-box-shadow: 1px 0 15px 16px var(--second-bg-colour);
     -moz-box-shadow: 1px 0 15px 16px var(--second-bg-colour);
@@ -162,6 +189,15 @@ nav > ul > li > a {
 
   nav > ul > li > a > svg {
     height: 6vh !important;
+  }
+
+  .projectsContainer {
+    /*              calc(svg_height + nav_label_height + vert_padding + boxshadow_blur + boxshadow_spread) */
+    padding-bottom: calc(6vh + 2vh + 0.5rem + 15px + 16px);
+  }
+
+  .project > h2 {
+    font-size: 1.5em;
   }
 }
 
