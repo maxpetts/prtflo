@@ -1,5 +1,6 @@
 module.exports = {
 	images: {
-		domains: ['https://github.com/maxpxtts/'],
+		loader: 'imgix',
+		path: 'https://github.com/maxpxtts/',	
 	},
 }
