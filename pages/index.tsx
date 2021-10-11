@@ -5,7 +5,7 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>Max Petts</h1>
-	<p>Please note this is site is a work in progress</p>
+	<p>Please note this site is a work in progress</p>
       </main>
     </div >
   );
