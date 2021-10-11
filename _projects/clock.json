@@ -1,7 +1,7 @@
 {
     "title": "Clock",
     "desc": "A Java simulation of a clock, using AWT and Swing to display the clock face",
-    "image": "https://github.com/maxpxtts/Clock/blob/main/Example.PNG",
+    "image": "/Clock/blob/main/Example.PNG",
     "git": "https://github.com/maxpxtts/Clock",
     "complexity": 2,
     "lang": "Java"
