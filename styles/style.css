@@ -137,7 +137,7 @@ nav > ul > li > a > svg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: end;
+  align-content: flex-end;
   height: 100%;
   flex-wrap: wrap;
 }
