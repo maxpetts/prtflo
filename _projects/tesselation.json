@@ -1,8 +1,8 @@
 {
-    "title": "Pattern Tesselation",
-    "desc": "A Processing sketch that allows users to create custom patterns, and then rotate that pattern.",
-    "image": "https://github.com/maxpxtts/pattern_tesselation/blob/main/Example.PNG?raw=true",
-    "git": "https://github.com/maxpxtts/pattern_tesselation",
-    "complexity": 1,
-    "lang": "Processing"
+  "title": "Pattern Tesselation",
+  "desc": "A Processing sketch that allows users to create custom patterns, and then rotate that pattern.",
+  "image": "https://github.com/maxpxtts/pattern_tesselation/blob/main/Example.PNG?raw=true",
+  "git": "https://github.com/maxpxtts/pattern_tesselation",
+  "complexity": 1,
+  "langs": ["Processing"]
 }
