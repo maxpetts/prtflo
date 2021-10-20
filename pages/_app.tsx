@@ -25,6 +25,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="author" content="Max Petts" />
         <title> Max Petts </title>
         <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+        <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="favicon/apple-touch-icon.png"

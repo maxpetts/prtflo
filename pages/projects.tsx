@@ -3,12 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { getProjects } from "../lib/projectLoader";
 
-function ProjectItem({ slug, title, desc, image, git, complexity, lang }) {
+function ProjectItem({ slug, title, desc, image, git, complexity, langs }) {
   return (
     <Link href={git}>
       <div className="project">
         <h2>{title}</h2>
-
         <div className="project-desc">
           <Image
             src={image}
@@ -16,7 +15,17 @@ function ProjectItem({ slug, title, desc, image, git, complexity, lang }) {
             layout="fill"
             objectFit="contain"
           />
-          <span>{desc}</span>
+          <span>
+            {desc}
+            <div>
+              {langs.map((lang) => (
+                <i
+                  key={lang}
+                  className={`devicon-${lang.toLowerCase()}-plain`}
+                ></i>
+              ))}
+            </div>
+          </span>
         </div>
       </div>
     </Link>
