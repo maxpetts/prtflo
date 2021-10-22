@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import Image from "next/image";
+import NextFallbackImage from "../components/NextFallbackImage";
 import { getProjects } from "../lib/projectLoader";
 
 function ProjectItem({ slug, title, desc, image, git, complexity, langs }) {
@@ -9,8 +9,9 @@ function ProjectItem({ slug, title, desc, image, git, complexity, langs }) {
       <div className="project">
         <h2>{title}</h2>
         <div className="project-desc">
-          <Image
+          <NextFallbackImage
             src={image}
+            fallbackSrc={"/fallback.gif"}
             alt={"an image relating to " + title}
             layout="fill"
             objectFit="contain"
