@@ -1,0 +1,8 @@
+{
+  "title": "Portfolio",
+  "desc": "My portfolio site written in JavaScript, using Lottie-js, Devicons, Next.js and thus React.",
+  "image": "https://github.com/maxpxtts/prtflo/blob/main/Example.PNG?raw=true",
+  "git": "https://github.com/maxpxtts/prtflo",
+  "complexity": 3,
+  "langs": ["JavaScript", "React", "Nextjs", "CSS3"]
+}
