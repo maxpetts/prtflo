@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta name="author" content="Max Petts" />
         <title> Max Petts </title>
+        <link rel="preload" href="/fonts/far-out.ttf" as="font" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
