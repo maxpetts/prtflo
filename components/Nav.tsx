@@ -6,13 +6,14 @@
  * @link https://github.com/maxpxtts/prtflo
  */
 
+import lottie, { AnimationItem } from "lottie-web";
 import Link from "next/link";
 import React from "react";
-import lottie, { AnimationItem } from "lottie-web";
+// TODO : Create custom loader for these imports
+import animation_contact from "../public/icons/contact.json";
+import animation_cv from "../public/icons/cv.json";
 import animation_home from "../public/icons/home.json";
 import animation_projects from "../public/icons/projects.json";
-import animation_cv from "../public/icons/cv.json";
-import animation_contact from "../public/icons/contact.json";
 
 /**
  * Component for the individual nav bar buttons,
