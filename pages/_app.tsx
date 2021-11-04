@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta name="author" content="Max Petts" />
         <title> Max Petts </title>
-        <link rel="preload" href="/fonts/far-out.ttf" as="font" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.1/web-animations-next.min.js"></script>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
