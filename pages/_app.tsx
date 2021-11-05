@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import "../styles/style.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import Nav from "../components/Nav";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -55,7 +54,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="favicon/favicon.ico" />
         <meta name="theme-color" content="#8280c7" />
       </Head>
-      <Nav />
       <Component {...pageProps} />
     </div>
   );

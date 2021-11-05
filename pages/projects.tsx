@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import NextFallbackImage from "../components/NextFallbackImage";
 import { getProjects } from "../lib/projectLoader";
+import Nav from "../components/Nav";
 
 function ProjectItem({ slug, title, desc, image, git, complexity, langs }) {
   return (
@@ -35,14 +36,17 @@ function ProjectItem({ slug, title, desc, image, git, complexity, langs }) {
 
 export default function Projects({ projects }) {
   return (
-    <main className="main">
-      <h1 className="title">Projects</h1>
-      <div className="projectsContainer">
-        {projects.map((item) => (
-          <ProjectItem key={item.slug} {...item} />
-        ))}
-      </div>
-    </main>
+    <>
+      <Nav />
+      <main className="main">
+        <h1 className="title">Projects</h1>
+        <div className="projectsContainer">
+          {projects.map((item) => (
+            <ProjectItem key={item.slug} {...item} />
+          ))}
+        </div>
+      </main>
+    </>
   );
 }
 
