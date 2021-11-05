@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 function NextFallbackImage(props) {
-  const { src, fallbackSrc, ...rest } = props;
+  const { src, fallbackSrc, className, ...rest } = props;
   const [imgSrc, setImgSrc] = useState(src);
 
   // Can I set a lottie anim as the placeholder?
@@ -10,6 +10,7 @@ function NextFallbackImage(props) {
   return (
     <Image
       {...rest}
+      className={className}
       src={imgSrc}
       onError={() => {
         setImgSrc(fallbackSrc);
