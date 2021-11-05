@@ -5,12 +5,7 @@
   --bg-stripe: #ebebf5;
 }
 
-@font-face {
-  font-family: "far-out";
-  src: url("/fonts/far-out.ttf");
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Gochi+Hand&family=Montez&family=Niconne&display=swap");
 
 body:not(nav) {
   background: repeating-linear-gradient(
@@ -70,15 +65,15 @@ nav > ul > li > a > svg {
 
 .projectsContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: flex-start;
 }
 
 .project {
-  margin: 0.75em;
-  padding: 0.5em 2.5em;
+  margin: 0.75em 0;
+  padding: 0.5em 1em;
   width: 25em;
   height: 15em;
   border: 0.4em solid var(--bg-stripe);
@@ -140,7 +135,7 @@ nav > ul > li > a > svg {
 .project-desc > span > div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: flex-end;
   height: 100%;
   flex-wrap: wrap;
@@ -151,32 +146,56 @@ nav > ul > li > a > svg {
 }
 
 header {
-  display: table-cell;
+  display: grid;
   position: relative;
-  height: 50vh;
-  width: 100vw;
+  height: 75vh;
+  width: 100%;
   vertical-align: middle;
-  padding: 0 5rem;
+  padding: 1rem 5rem 0;
 }
 
-header img {
-  min-width: 50% !important;
-  max-width: 50% !important;
-  inset: unset !important;
+header > div {
+  width: 50% !important;
   right: 0 !important;
+  left: unset !important;
+}
+
+header > div > img {
+  min-width: 95% !important;
+  max-width: 95% !important;
 }
 
 header > h1 {
   font-size: 6rem;
-  margin-bottom: 1rem;
+  margin: auto 0 0.1rem;
 }
 
 header > p {
-  margin-top: 0.5rem;
+  margin: 0.1rem 0 1rem;
   font-size: 2rem;
   max-width: 50%;
 }
 
+.postMastHead {
+  background-color: rgb(110, 135, 153);
+  background: linear-gradient(
+    155deg,
+    rgba(110, 135, 153) 0%,
+    rgba(183, 199, 206) 200%
+  );
+  box-shadow: inset 0 1.5rem 1rem -1rem rgba(42, 57, 68, 0.2),
+    inset 0 -1.5rem 1rem -1rem rgba(42, 57, 68, 0.2);
+  min-height: 9rem;
+  color: var(--main-bg-colour);
+  font-size: 3em;
+  overflow: hidden;
+  position: relative;
+  font-family: "Gochi Hand", cursive;
+}
+
+.nounContainer > .rightWords {
+  left: 100%;
+}
 
 /* Desktop. Not ultrawides */
 @media (min-width: 800px) and (max-width: 2160px) {
@@ -206,7 +225,6 @@ header > p {
     padding-bottom: calc(
       0.5rem + 2.3em + 2.3em + 1rem + 3em
     ); /* Account for height of navbar */
-    background-color: var(--main-bg-colour);
   }
 
   nav {
@@ -242,6 +260,37 @@ header > p {
     margin: auto;
     height: 8vw !important;
     width: 8vw !important;
+  }
+
+  .project {
+    width: 40%;
+  }
+
+  header {
+    padding: 1rem;
+    grid-template-rows: 50%;
+    grid-template-columns: 100%;
+    align-content: space-evenly;
+    height: 50vh;
+  }
+
+  header > h1 {
+    margin: 0;
+    font-size: 22vw;
+    line-height: 16vw;
+    align-self: end;
+    max-width: 50vw;
+  }
+
+  header > p {
+    max-width: none;
+  }
+
+  header > div {
+    width: 100%;
+    height: 50vw;
+    grid-column-start: 1;
+    top: 3vw !important;
   }
 }
 
