@@ -1,4 +1,3 @@
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import NextFallbackImage from "../components/NextFallbackImage";
 import { getProjects } from "../lib/projectLoader";
