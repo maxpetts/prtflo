@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import AutoscrollingNouns from "../components/AutoscrollingNouns";
 
@@ -37,13 +38,18 @@ export default function Home() {
         <AutoscrollingNouns nouns={myNouns} />
       </div>
 
-      <h1>Please note this site is a work in progress</h1>
+      <main>
+        <h1>Please note this site is a work in progress</h1>
 
-      <p>
-        <strong>Proficient in: </strong>
-        Python 3, JS ES6, C++, Java, Swift
-      </p>
-      <main></main>
+        <p>
+          <strong>Proficient in: </strong>
+          Python 3, JS ES6, C++, Java, Swift
+        </p>
+
+        <Link href="/projects">
+          <a className="button">View a few of my projects</a>
+        </Link>
+      </main>
     </>
   );
 }

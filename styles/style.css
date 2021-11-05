@@ -17,6 +17,7 @@ body:not(nav) {
   );
   color: rgb(59, 57, 102);
   min-height: 100vh;
+  display: grid;
 }
 
 nav {
@@ -197,6 +198,46 @@ header > p {
   left: 100%;
 }
 
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  font-size: 2.5rem;
+  background-color: rgb(159, 223, 228);
+  background: linear-gradient(
+    155deg,
+    rgb(159, 223, 228) 0%,
+    rgb(141, 201, 206) 100%
+  );
+  border: 6px solid var(--main-bg-colour);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1em 30vw;
+  color: rgb(110, 135, 153);
+  transition: 0.25s;
+}
+
+.button:hover,
+.button:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+  border-color: rgb(110, 135, 153);
+  background: linear-gradient(
+    155deg,
+    rgb(159, 223, 228) 0%,
+    rgb(141, 201, 206) 200%
+  );
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(110, 135, 153);
+  }
+}
+
 /* Desktop. Not ultrawides */
 @media (min-width: 800px) and (max-width: 2160px) {
   nav > ul {
@@ -215,6 +256,11 @@ header > p {
 
   .err404 {
     margin-bottom: 1.5rem !important;
+  }
+
+  header > div {
+    max-height: 60vh !important;
+    margin: auto !important;
   }
 }
 
