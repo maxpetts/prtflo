@@ -5,9 +5,9 @@
   --bg-stripe: #ebebf5;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Gochi+Hand&family=Montez&family=Niconne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Fugaz+One&family=Gochi+Hand&display=swap");
 
-body:not(nav) {
+.mainContainer {
   background: repeating-linear-gradient(
     -45deg,
     var(--main-bg-colour),
@@ -16,8 +16,6 @@ body:not(nav) {
     var(--nav-colour) 0.8em
   );
   color: rgb(59, 57, 102);
-  min-height: 100vh;
-  display: grid;
 }
 
 nav {
@@ -205,7 +203,7 @@ main {
 }
 
 .button {
-  font-size: 2.5rem;
+  font-size: 5vw;
   background-color: rgb(159, 223, 228);
   background: linear-gradient(
     155deg,
@@ -309,7 +307,12 @@ main {
   }
 
   .project {
-    width: 40%;
+    margin: 0.5rem 1rem;
+    text-align: left;
+  }
+
+  .project:first-of-type {
+    margin: 0 1rem 0.5rem;
   }
 
   header {
@@ -333,7 +336,7 @@ main {
   }
 
   header > div {
-    width: 100%;
+    width: 100vw;
     height: 50vw;
     grid-column-start: 1;
     top: 3vw !important;
