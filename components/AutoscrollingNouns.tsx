@@ -10,7 +10,7 @@ const AutoscrollingNouns = (props) => {
   const bottom = nouns.splice(-half);
 
   // The above math shouldn't fail, but if it does for some reason: display the missed nouns
-  nouns ? console.log("missed nouns : " + nouns) : "";
+  nouns.length ? console.log("missed nouns : " + nouns) : "";
 
   const keyframes = `@keyframes nounSlide {
     from {
