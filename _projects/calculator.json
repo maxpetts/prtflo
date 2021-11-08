@@ -1,8 +1,8 @@
 {
   "title": "Calculator",
   "desc": "A Java implementation of a calculator, using AWT & Swing.",
-  "image": "https://github.com/maxpxtts/Calculator/blob/main/Example.PNG?raw=true",
-  "git": "https://github.com/maxpxtts/Calculator",
+  "image": "https://github.com/maxpetts/Calculator/blob/main/Example.PNG?raw=true",
+  "git": "https://github.com/maxpetts/Calculator",
   "complexity": 2,
   "langs": ["Java"]
 }

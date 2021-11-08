@@ -1,8 +1,8 @@
 {
   "title": "Blender Scripts",
   "desc": "A collection of Python scripts, with the objective to produce some creative scenes; using Blender and it's API: bpy. ",
-  "image": "https://github.com/maxpxtts/blender/blob/main/Example.PNG?raw=true",
-  "git": "https://github.com/maxpxtts/blender",
+  "image": "https://github.com/maxpetts/blender/blob/main/Example.PNG?raw=true",
+  "git": "https://github.com/maxpetts/blender",
   "complexity": 2,
   "langs": ["Python", "Blender"]
 }

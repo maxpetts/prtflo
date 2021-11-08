@@ -1,8 +1,8 @@
 {
   "title": "Checkout Simulation",
   "desc": "A Java program, using AWT & Swing, to emulate and then visualise the internal workings of a supermarket.",
-  "image": "/favicon/android-chrome-512x512.png",
-  "git": "https://github.com/maxpxtts/Checkout",
+  "image": "https://github.com/maxpetts/Checkout/blob/main/Example.PNG?raw=true",
+  "git": "https://github.com/maxpetts/Checkout",
   "complexity": 1,
   "langs": ["Java"]
 }
