@@ -1,6 +1,6 @@
 {
   "title": "Dissertation",
-  "desc": "A full-stack web app enabling users to upload and view images on a map of the world",
+  "desc": "A full-stack web app enabling users to upload and view images on a map of the world. Image Exif data is auto extracted.",
   "image": "https://github.com/maxpxtts/mapping-images/blob/main/Example.PNG?raw=true",
   "git": "https://github.com/maxpxtts/mapping-images",
   "complexity": 3,
