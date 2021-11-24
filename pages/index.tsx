@@ -49,6 +49,10 @@ export default function Home() {
         <Link href="/projects">
           <a className="button">View a few of my projects</a>
         </Link>
+
+        <div className="aboutMe">
+          <h2>About Me</h2>
+        </div>
       </main>
     </>
   );
