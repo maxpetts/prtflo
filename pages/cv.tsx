@@ -5,11 +5,7 @@ function Cv() {
   return (
     <>
       <Nav />
-      <div className={styles.container}>
-        <main className={styles.main}>
-          <h1 className={styles.title}>MP CV</h1>
-        </main>
-      </div>
+          <object data="CV.pdf" type="application/pdf" width="100%" height="100%" style={{minHeight:"100vh"}}>My CV should be here..</object>
     </>
   );
 }
